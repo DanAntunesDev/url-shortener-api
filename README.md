@@ -1,15 +1,16 @@
 # URL Shortener API
 
-Serviço backend para encurtamento de URLs desenvolvido com Node.js.  
+Serviço backend para encurtamento de URLs desenvolvido com Node.js.
+
 A aplicação permite gerar links curtos a partir de URLs completas e redirecionar o usuário automaticamente para o endereço original.
 
 Este projeto foi criado como prática de desenvolvimento backend, focando em organização de código, manipulação de requisições HTTP e construção de serviços web simples.
 
 ---
 
-# Objetivo do projeto
+## Objetivo do projeto
 
-O objetivo da aplicação é simular o funcionamento de serviços de encurtamento de links, como:
+O objetivo da aplicação é simular o funcionamento de serviços de encurtamento de links como:
 
 - Bitly
 - TinyURL
@@ -18,16 +19,16 @@ O sistema recebe uma URL longa, gera um identificador curto e cria um link que r
 
 ---
 
-# Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Node.js
 - JavaScript
-- HTTP server
-- arquitetura modular
+- HTTP Server
+- Arquitetura modular
 
 ---
 
-# Funcionalidades
+## Funcionalidades
 
 A API oferece as seguintes funcionalidades:
 
@@ -38,56 +39,69 @@ A API oferece as seguintes funcionalidades:
 
 ---
 
-# Estrutura do projeto
+## Estrutura do projeto
 
 A aplicação segue uma estrutura simples de backend:
 
+```
 src/
-routes/
-controllers/
-services/
-utils/
+  routes/
+  controllers/
+  services/
+  utils/
 
 server.js
+```
 
-
-Essa organização separa as responsabilidades da aplicação, facilitando manutenção e evolução do código.
+Essa organização separa responsabilidades da aplicação e facilita manutenção e evolução do código.
 
 ---
 
-# Funcionamento do sistema
+## Funcionamento do sistema
 
 O fluxo básico da aplicação é:
 
-1. O usuário envia uma URL longa
-2. O sistema gera um identificador curto
-3. A URL é armazenada
-4. Um novo link curto é criado
-5. Ao acessar o link curto, o sistema redireciona para a URL original
+1. o usuário envia uma URL longa
+2. o sistema gera um identificador curto
+3. a URL é armazenada
+4. um novo link curto é criado
+5. ao acessar o link curto o sistema redireciona para a URL original
 
 ---
 
-# Como executar o projeto
+## Como executar o projeto
 
 Clone o repositório:
-git clone https://github.com/DanAntunesDev/url-shortener-api
 
+```bash
+git clone https://github.com/DanAntunesDev/url-shortener-api
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd url-shortener-api
+```
 
 Instale as dependências:
-npm install
 
+```bash
+npm install
+```
 
 Inicie o servidor:
-npm start
 
+```bash
+npm start
+```
 
 Após iniciar, o serviço ficará disponível localmente para receber requisições.
 
 ---
 
-# Possíveis melhorias futuras
+## Possíveis melhorias futuras
 
-Este projeto pode evoluir com diversas melhorias, como:
+Este projeto pode evoluir com diversas melhorias como:
 
 - persistência em banco de dados
 - contagem de acessos
@@ -98,6 +112,6 @@ Este projeto pode evoluir com diversas melhorias, como:
 
 ---
 
-# Autor
+## Autor
 
 Daniel Antunes
